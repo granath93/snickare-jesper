@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+:root {
+  --background-secondary: rgb(73, 73, 73);
+  --background: #222222;
+  --foreground: rgba(213, 213, 213, 1);
+  --accent: rgba(255, 235, 70, 1);
+  --accent-secondary: rgba(213, 213, 213, 0.3);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-background-secondary: var(--background-secondary);
+  --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
+  --color-accent-secondary: var(--accent-secondary);
+  --font-inter: var(--font-inter);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--font-bebas), Helvetica, sans-serif;
+}
+
+h1 {
+  @apply font-semibold text-6xl md:text-7xl lg:text-8xl xl:text-9xl;
+}
+
+h2 {
+  @apply font-semibold text-4xl md:text-6xl;
+}
+
+a {
+  @apply transition-colors duration-500;
+}
+
+a:hover {
+  @apply text-accent;
+}
+
+a,
+button {
+  @apply cursor-pointer;
+}
+
+a.button-lookalike,
+button {
+  @apply rounded bg-accent text-black py-2 px-4 md:py-3 md:px-6 w-fit transition-colors duration-300 text-lg sm:text-xl md:text-3xl font-medium;
+}
+
+a.button-lookalike:hover,
+button:hover {
+  @apply rounded bg-background text-accent outline-1 outline-accent outline-solid;
+}
+
+input {
+  @apply h-12;
+}
+
+input,
+textarea {
+  @apply outline-accent-secondary outline-2 p-2 rounded max-w-full;
+}
+
+input:focus,
+input:-webkit-autofill:focus,
+textarea:focus,
+textarea:-webkit-autofill:focus {
+  @apply outline-accent outline-2 p-2 rounded;
+}
+
+.hero {
+  background-image: url("/hero-image.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
