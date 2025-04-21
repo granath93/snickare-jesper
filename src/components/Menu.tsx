@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import Underline from "./Underline";
 
 type MenuItem = { href: string; label: string };
@@ -41,9 +41,11 @@ const Menu = () => {
 
   return (
     <nav className="fixed top-0 z-10 inline-flex items-center justify-end right-4 md:right-10 w-full">
-      {items.map((item) => (
-        <MenuItem item={item} key={item.href} />
-      ))}
+      <Suspense>
+        {items.map((item) => (
+          <MenuItem item={item} key={item.href} />
+        ))}
+      </Suspense>
     </nav>
   );
 };
