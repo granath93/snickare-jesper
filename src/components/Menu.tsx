@@ -56,7 +56,7 @@ const MenuItem: React.FC<{ item: MenuItem }> = ({ item: { href, label } }) => {
 
   useEffect(() => {
     setIsActive(window.location.hash === href);
-  }, [searchParam]);
+  }, [searchParam, href]);
 
   useEffect(() => {
     const onHashChange = () => {
@@ -65,13 +65,13 @@ const MenuItem: React.FC<{ item: MenuItem }> = ({ item: { href, label } }) => {
     window.addEventListener("hashchange", onHashChange);
 
     return () => window.removeEventListener("hashchange", onHashChange);
-  }, []);
+  }, [href]);
 
   return (
     <Underline key={href} hidden={!isActive} variant="small">
       <Link
         href={href}
-        className={`text-lg md:text-xl p-2 ${
+        className={`text-base md:text-lg p-2 ${
           isActive ? "text-accent" : "text-red-200"
         }`}
         aria-current={isActive ? "page" : "false"}

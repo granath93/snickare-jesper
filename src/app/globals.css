@@ -6,6 +6,7 @@
   --foreground: rgba(213, 213, 213, 1);
   --accent: rgba(255, 235, 70, 1);
   --accent-secondary: rgba(213, 213, 213, 0.3);
+  --hero-url: url("https://ucwo2izryqq2mgwr.public.blob.vercel-storage.com/hero-image-rezNoJF3ly77k2MljqQmEl5bSzwuHz.png");
 }
 
 @theme inline {
@@ -40,7 +41,7 @@ h2 {
 }
 
 a {
-  @apply transition-colors duration-500;
+  @apply transition-colors duration-500 text-foreground;
 }
 
 a:hover {
@@ -79,7 +80,7 @@ textarea:-webkit-autofill:focus {
 }
 
 .hero {
-  background-image: url("/hero-image.png");
+  background-image: var(--hero-url);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

@@ -1,7 +1,7 @@
 import Image from "next/image";
 
-const mail = "xxxxxxxxxxxxxxx@gmail.com";
-const tel = "xxxxxxxxxx";
+const mail = process.env.NEXT_PUBLIC_MAIL ?? "xxxxxxxxxxxxxxx@gmail.com";
+const tel = process.env.NEXT_PUBLIC_TEL ?? "xxxxxxxxxx";
 
 const variants = {
   tel: {

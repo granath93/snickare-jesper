@@ -41,7 +41,7 @@ export default function RootLayout({
         />
         <link rel="manifest" href="/site.webmanifest" />
       </head>
-      <body className={`${inter.variable} ${bebas.variable} antialiased box-border`}>{children}</body>
+      <body className={`${inter.variable} ${bebas.variable} antialiased`}>{children}</body>
     </html>
   );
 }
