@@ -11,7 +11,7 @@ const Section: React.FC<{
   useSectionObserver(id);
 
   return (
-    <div id={id} className="flex flex-col gap-6 mb-24 scroll-mt-14">
+    <div id={id} className="flex flex-col gap-6 mb-48 scroll-mt-14">
       <Underline>
         <h2>{title}</h2>
       </Underline>
