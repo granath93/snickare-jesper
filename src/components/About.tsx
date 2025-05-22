@@ -4,7 +4,7 @@ import Section from "./Section";
 const About = () => {
   return (
     <Section id="about" title="Om mig">
-      <div className="flex flex-col-reverse md:flex-row gap-8 w-full md:w-3xl max-w-full">
+      <div className="flex flex-col-reverse md:flex-row gap-8">
         <div className="relative w-[178px] h-[238px] shrink-0">
           <Image
             src="/jesper.png"
