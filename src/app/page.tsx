@@ -1,11 +1,12 @@
 import Footer from "@/components/Footer";
-import About from "../components/About";
-import Contact from "../components/Contact";
-import Library from "../components/Library";
-import Hero from "../components/Hero";
-import Menu from "../components/Menu";
+import About from "@/components/About";
+import Contact from "@/components/Contact";
+import Library from "@/components/Library";
+import Hero from "@/components/Hero";
+import Menu from "@/components/Menu";
 
 export default function Home() {
+
   return (
     <>
       <Menu />

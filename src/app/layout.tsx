@@ -13,19 +13,30 @@ const bebas = BebasNeue({
   weight: '400',
 });
 
+const title = "Snickare Jesper Pettersson | Alingsås";
+const description = "Snickare i och runtom Alingsås. Bygger, renoverar och underhåller.";
+
+
 export const metadata: Metadata = {
-  title: "Snickare Jesper Pettersson",
-  description: "Snickare Jesper Pettersson | Alingsås",
+  title,
+  description,
+  robots: { index: true, follow: true },
+  keywords: ["snickare", "jesper", "pettersson", "alingsås", "snickeri"],
+  openGraph: {
+    title,
+    description,
+    type: "website",
+    url: "https://snickare-jesper.vercel.app",
+  }
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
+export default function RootLayout({ children }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="sv" className="scroll-smooth">
       <head>
+      <link rel="canonical" href="https://snickare-jesper.vercel.app" />
         <link
           rel="icon"
           type="image/png"
@@ -40,6 +51,8 @@ export default function RootLayout({
           href="/apple-touch-icon.png"
         />
         <link rel="manifest" href="/site.webmanifest" />
+        {/* Google search console tag: https://search.google.com/search-console/welcome?utm_source=about-page */}
+        <meta name="google-site-verification" content="WYPHTODT4ibQ9OLeb4xwOtDBpxDVOSKXiFHP302-pXo" />
       </head>
       <body className={`${inter.variable} ${bebas.variable} antialiased`}>{children}</body>
     </html>

@@ -9,15 +9,15 @@ const Contact = () => {
     : 'Antingen kan du ringa direkt, skicka ett SMS eller fylla i formuläret nedanför så kontaktar Jesper dig.';
 
   return (
-    <Section id="contact" title="Kontakt">
-      <p className="w-full md:w-3xl max-w-full">
-        {text}
-      </p>
-      <div className="inline-flex gap-4 md:gap-6 flex-wrap">
-        <Info variant="tel" />
-        <Info variant="mail" />
-      </div>
-      {showForm && <Form />}
+    <Section id="contact" title="Kontakt" >
+        <p className="w-full md:w-3xl max-w-full">
+          {text}
+        </p>
+        <div className="inline-flex gap-4 md:gap-6 flex-wrap">
+          <Info variant="tel" />
+          <Info variant="mail" />
+        </div>
+        {showForm && <Form />}
     </Section>
   );
 };
