@@ -12,7 +12,7 @@ export const libraryResources: LibraryResource[] = [{
     alt: 'hylla'
 },
 {
-    title: 'Platsbyggd hylla hylla - efter målning',
+    title: 'Platsbyggd hylla - efter målning',
     description: 'En bokhylla i ek som är designad för att passa in i en specifik vägg.',
     imageUrl: 'https://ucwo2izryqq2mgwr.public.blob.vercel-storage.com/hylla-efter-MkxuWKCzR75FSfnNpbZaRJ2Z8sfqxT.png',
     alt: 'bokhylla'
