@@ -3,7 +3,9 @@
 import Button from "./Button";
 
 const Form = () => {
-  const sendData = () => {console.log('send data')};
+  const sendData = () => {
+    console.log("send data");
+  };
 
   return (
     <>

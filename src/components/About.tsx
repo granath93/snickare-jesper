@@ -27,8 +27,8 @@ const About = () => {
 
           <p>
             Med många nöjda kunder bakom sig och ett rykte om att vara både
-            trevlig och noggrann, är Jesper det trygga valet för dig som vill
-            ha jobbet gjort – på rätt sätt, från start till mål.
+            trevlig och noggrann, är Jesper det trygga valet för dig som vill ha
+            jobbet gjort – på rätt sätt, från start till mål.
           </p>
 
           <p>Utgår från Alingsås.</p>
