@@ -22,13 +22,13 @@ const About = () => {
             hantverkare – han är en problemlösare med öga för detaljer och en
             passion för sitt yrke. Oavsett om du planerar en omfattande
             renovering, ett nytt altanbygge eller behöver hjälp med finsnickeri,
-            så levererar Jesper alltid med högsta kvalitet.
+            så levererar Jesper alltid en bra kvalitet.
           </p>
 
           <p>
             Med många nöjda kunder bakom sig och ett rykte om att vara både
-            punktlig och noggrann, är Jesper det trygga valet för dig som vill
-            ha jobbet gjort – på rätt sätt, från start till mål.
+            trevlig och noggrann, är Jesper det trygga valet för dig som vill ha
+            jobbet gjort – på rätt sätt, från start till mål.
           </p>
 
           <p>Utgår från Alingsås.</p>
