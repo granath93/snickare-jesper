@@ -36,6 +36,14 @@ export const metadata: Metadata = {
   },
 };
 
+// WebSite structured data (JSON-LD) for Google search results
+const webSiteStructuredData = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: title,
+  url,
+});
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -64,16 +72,10 @@ export default function RootLayout({
           content="WYPHTODT4ibQ9OLeb4xwOtDBpxDVOSKXiFHP302-pXo"
         />
 
-        {/* WebSite structured data (JSON-LD) for SEO */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "WebSite",
-              name: title,
-              url,
-            }),
+            __html: webSiteStructuredData,
           }}
         />
       </head>
