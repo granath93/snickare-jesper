@@ -63,6 +63,19 @@ export default function RootLayout({
           name="google-site-verification"
           content="WYPHTODT4ibQ9OLeb4xwOtDBpxDVOSKXiFHP302-pXo"
         />
+
+        {/* WebSite structured data (JSON-LD) for SEO */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: title,
+              url,
+            }),
+          }}
+        />
       </head>
       <body className={`${inter.variable} ${bebas.variable} antialiased`}>
         {children}
