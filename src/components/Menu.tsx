@@ -27,6 +27,19 @@ const items: MenuItem[] = [
 ];
 
 const Menu = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => {
+      setScrolled(window.scrollY > 8);
+    };
+
+    onScroll();
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   useEffect(() => {
     const hash = window.location.hash;
 
@@ -40,7 +53,12 @@ const Menu = () => {
   }, []);
 
   return (
-    <nav className="fixed top-0 z-10 inline-flex items-center justify-end right-4 md:right-10 w-full">
+    <nav
+      className={`fixed top-0 z-10 inline-flex items-center justify-end pr-4 md:pr-10 w-full transition-colors duration-200 ${
+        scrolled ? "bg-black/30 backdrop-blur-xs" : "bg-transparent"
+      }`}
+      aria-hidden={false}
+    >
       <Suspense>
         {items.map((item) => (
           <MenuItem item={item} key={item.href} />
