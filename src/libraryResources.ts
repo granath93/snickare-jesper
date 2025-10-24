@@ -22,5 +22,23 @@ export const libraryResources: LibraryResource[] = [{
     description: 'En rustik soffa som tål mycket.',
     imageUrl: 'https://ucwo2izryqq2mgwr.public.blob.vercel-storage.com/soffa-mJ0JKZTWCMz6KNrpyCdwveM2TueshY.png',
     alt: 'soffa'
+},
+{
+    title: 'Utomhustappa uppifrån',
+    description: 'En formad trappa som följer naturen - sedd från toppen av trappan.',
+    imageUrl: 'https://ucwo2izryqq2mgwr.public.blob.vercel-storage.com/trappa-uppifran.png',
+    alt: 'trappa uppifrån'
+},
+{
+    title: 'Utomhustrappa framifrån',
+    description: 'En formad trappa som följer naturen - sedd framifrån av trappan.',
+    imageUrl: 'https://ucwo2izryqq2mgwr.public.blob.vercel-storage.com/trappa-framifran.png',
+    alt: 'trappa framifrån'
+},
+{
+    title: 'Utomhustrappa nedifrån',
+    description: 'En formad trappa som följer naturen - sedd från foten av trappan.',
+    imageUrl: 'https://ucwo2izryqq2mgwr.public.blob.vercel-storage.com/trappa-nedanfor.png',
+    alt: 'soffa'
 }
 ]
