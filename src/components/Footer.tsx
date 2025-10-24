@@ -1,13 +1,17 @@
 import Info from "./Info";
 
 const Footer = () => {
+  const year = new Date().getFullYear();
   return (
-    <footer className="flex flex-col md:flex-row gap-3 md:gap-6 items-start md:items-center justify-center mb-8">
-      <span className="inline-flex gap-2">
-        <p>Jesper Pettersson</p> | <p>Alingsås</p>
-      </span>
-      <Info variant="tel" />
-      <Info variant="mail" />
+    <footer className="flex flex-col items-center justify-center mb-3 gap-5">
+      <div className="flex flex-col md:flex-row gap-3 md:gap-6 items-start md:items-center justify-center">
+        <span className="inline-flex gap-2">
+          <p>Jesper Pettersson</p> | <p>Alingsås</p>
+        </span>
+        <Info variant="tel" />
+        <Info variant="mail" />
+      </div>
+      <small> © {year} </small>
     </footer>
   );
 };
