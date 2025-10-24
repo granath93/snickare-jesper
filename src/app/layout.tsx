@@ -16,8 +16,10 @@ const bebas = BebasNeue({
 const title = "Snickare Jesper Pettersson | Alingsås";
 const description =
   "Snickare i och runtom Alingsås. Bygger, renoverar och underhåller.";
+const url = "https://snickare-jesper.vercel.app";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(url),
   title,
   description,
   robots: { index: true, follow: true },
@@ -26,7 +28,7 @@ export const metadata: Metadata = {
     title,
     description,
     type: "website",
-    url: "https://snickare-jesper.vercel.app",
+    url,
     siteName: title,
   },
 };

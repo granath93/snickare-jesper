@@ -42,7 +42,7 @@ export const libraryResources: LibraryResource[] = [
     description:
       "En formad trappa som följer naturen - sedd framifrån av trappan.",
     imageUrl:
-      "https://ucwo2izryqq2mgwr.public.blob.vercel-storage.com/trappa-framifran.png",
+      "https://ucwo2izryqq2mgwr.public.blob.vercel-storage.com/trappa-framifran-KLBrr3KSYtGtYxnnffbJRU57clFrRh.png",
     alt: "trappa framifrån",
   },
   {
