@@ -24,6 +24,9 @@ export const metadata: Metadata = {
   description,
   robots: { index: true, follow: true },
   keywords: ["snickare", "jesper", "pettersson", "alingsås", "snickeri"],
+  alternates: {
+    canonical: url,
+  },
   openGraph: {
     title,
     description,
@@ -41,7 +44,6 @@ export default function RootLayout({
   return (
     <html lang="sv" className="scroll-smooth">
       <head>
-        <link rel="canonical" href="https://snickare-jesper.vercel.app" />
         <link
           rel="icon"
           type="image/png"
