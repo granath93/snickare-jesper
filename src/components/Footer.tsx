@@ -11,7 +11,7 @@ const Footer = () => {
         <Info variant="tel" />
         <Info variant="mail" />
       </div>
-      <small> © {year} </small>
+      <small> © {year} Designad & skapad av Amanda Granath </small>
     </footer>
   );
 };
