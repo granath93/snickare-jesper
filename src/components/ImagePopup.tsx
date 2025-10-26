@@ -3,7 +3,7 @@ import Image from "next/image";
 import { LibraryResource } from "@/libraryResources";
 import IconButton from "./IconButton";
 
-const arrowsStyle = "md:static z-10 bg-black/80 rounded-full md:bg-transparent";
+const arrowsStyle = "md:static absolute z-10 bg-black/80 rounded-full md:bg-transparent";
 
 export const ImagePopup: React.FC<{
   list: LibraryResource[];
@@ -41,7 +41,7 @@ export const ImagePopup: React.FC<{
       className="self-center m-auto backdrop:backdrop-blur-sm md:pb-10 pb-4 px-4 h-full md:h-11/12 w-full md:w-fit bg-black text-white rounded-md scroll-auto"
     >
       <div className="flex flex-col">
-        <div className="sticky top-0 -translate-1 sm:translate-0 sm:w-full w-[102%] bg-black z-10 h-[48px]">
+        <div className="sticky top-0 -translate-1 sm:translate-0 sm:w-full w-[102%] bg-black z-20 h-[48px]">
           <IconButton
             src="/close.svg"
             ariaLabel="stäng modal"
@@ -92,14 +92,13 @@ const Images: React.FC<{ item: LibraryResource }> = ({ item }) => {
             <div className="h-[350px] max-w-full w-[350px] md:h-[590px] md:w-[590px] relative">
               <Image
                 className="h-full"
-                title={img.title}
                 alt={img.alt}
                 src={img.imageUrl}
                 fill={true}
               />
             </div>
             {img.description && (
-              <p className="flex-wrap w-full md:w-[500px] pt-3">
+              <p className="flex-wrap w-full md:w-[590px] pt-3">
                 {img.description}
               </p>
             )}

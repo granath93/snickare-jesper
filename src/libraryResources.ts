@@ -1,25 +1,24 @@
+type PopupItem = Pick<LibraryResource, "alt" | "description" | "imageUrl">;
 export type LibraryResource = {
   title: string;
   description?: string;
   imageUrl: string;
   alt: string;
-  popup?: ("original" | LibraryResource)[];
+  popup?: ("original" | PopupItem)[];
 };
 
 export const libraryResources: LibraryResource[] = [
   {
     title: "Platsbyggd hylla - enbart snickeri",
-    description:
-      "En platsbyggd bokhylla i ek innan och efter målning. Jesper utförde enbart snickeriet.",
+    description: "En platsbyggd bokhylla i MDF - innan och efter målning.",
     imageUrl:
       "https://ucwo2izryqq2mgwr.public.blob.vercel-storage.com/hylla-efter-MkxuWKCzR75FSfnNpbZaRJ2Z8sfqxT.png",
-    alt: "bokhylla",
+    alt: "målad bokhylla",
     popup: [
       {
-        title: "Platsbyggd hylla - innan målning",
         imageUrl:
           "https://ucwo2izryqq2mgwr.public.blob.vercel-storage.com/hylla-Jkel6Vakdqh0XIxHqyamHd9c3ZAtQF.png",
-        alt: "hylla",
+        alt: "omålad bokhylla",
       },
       "original",
     ],
@@ -34,7 +33,7 @@ export const libraryResources: LibraryResource[] = [
   {
     title: "Utomhustappa uppifrån",
     description:
-      "En formad trappa som följer naturen - sedd från toppen av trappan.",
+      "En trappa anpassad efter naturen - sedd från toppen av trappan.",
     imageUrl:
       "https://ucwo2izryqq2mgwr.public.blob.vercel-storage.com/trappa-uppifran.png",
     alt: "trappa uppifrån",
@@ -42,7 +41,7 @@ export const libraryResources: LibraryResource[] = [
   {
     title: "Utomhustrappa framifrån",
     description:
-      "En formad trappa som följer naturen - sedd framifrån av trappan.",
+      "En trappa anpassad efter naturen - sedd framifrån av trappan.",
     imageUrl:
       "https://ucwo2izryqq2mgwr.public.blob.vercel-storage.com/trappa-framifran-KLBrr3KSYtGtYxnnffbJRU57clFrRh.png",
     alt: "trappa framifrån",
@@ -50,7 +49,7 @@ export const libraryResources: LibraryResource[] = [
   {
     title: "Utomhustrappa nedifrån",
     description:
-      "En formad trappa som följer naturen - sedd från foten av trappan.",
+      "En trappa anpassad efter naturen - sedd från foten av trappan.",
     imageUrl:
       "https://ucwo2izryqq2mgwr.public.blob.vercel-storage.com/trappa-nedanfor.png",
     alt: "soffa",
@@ -64,8 +63,6 @@ export const libraryResources: LibraryResource[] = [
   },
   {
     title: "Platsbyggd garderob med skjutdörrar",
-    description:
-      "En formad trappa som följer naturen - sedd från foten av trappan.",
     imageUrl:
       "https://ucwo2izryqq2mgwr.public.blob.vercel-storage.com/grarderob-stangd-ZRlXBJldNFTPMOiaY1vaCXOYlFhiJr.png",
     alt: "garderob - stängd",
@@ -80,7 +77,7 @@ export const libraryResources: LibraryResource[] = [
   {
     title: "Altandörr och fasadbyte",
     description:
-      "Altandörren behövde bytas pga stora bristet. Resultatet blev en större där fasaden även fick sig ett lyft.",
+      "Altandörren behövde bytas pga brister och slitage. Resultatet blev en större altandörr där fasaden även fick sig ett lyft för att få dörren att passa in.",
     imageUrl:
       "https://ucwo2izryqq2mgwr.public.blob.vercel-storage.com/altandorr-ABzB15KlDReIzQL1olprcUi1mlXqpp.png",
     alt: "altandörr och fasad",
