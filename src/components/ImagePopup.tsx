@@ -3,7 +3,8 @@ import Image from "next/image";
 import { LibraryResource } from "@/libraryResources";
 import IconButton from "./IconButton";
 
-const arrowsStyle = "md:static absolute z-10 bg-black/80 rounded-full md:bg-transparent";
+const arrowsStyle =
+  "md:static absolute z-10 bg-black/80 rounded-full md:bg-transparent";
 
 export const ImagePopup: React.FC<{
   list: LibraryResource[];
@@ -12,26 +13,26 @@ export const ImagePopup: React.FC<{
 }> = ({ list, currentItem: item, updateCurrentItem }) => {
   const modal = useRef<HTMLDivElement>(null);
 
-  const getItemIndex = (item?: LibraryResource) => {
-    if (!item) return;
+  const findIndex = (item?: LibraryResource): number => {
+    if (!item || list.length === 0) return -1;
     return list.findIndex((i) => i.imageUrl === item.imageUrl);
   };
 
-  const nextItem = () => {
-    const currentIndex = getItemIndex(item);
-    if (currentIndex === undefined || currentIndex === -1) return;
+  const normalizeIndex = (index: number) => {
+    const len = list.length;
+    if (len === 0) return -1;
+    return ((index % len) + len) % len; // handles negative indices
+  };
 
-    const nextIndex = (currentIndex + 1) % list.length;
+  const moveBy = (offset: number) => {
+    const currentIndex = findIndex(item);
+    if (currentIndex === -1) return;
+    const nextIndex = normalizeIndex(currentIndex + offset);
     updateCurrentItem(list[nextIndex]);
   };
 
-  const previousItem = () => {
-    const currentIndex = getItemIndex(item);
-    if (currentIndex === undefined || currentIndex === -1) return;
-
-    const previousIndex = (currentIndex - 1 + list.length) % list.length;
-    updateCurrentItem(list[previousIndex]);
-  };
+  const nextItem = () => moveBy(1);
+  const previousItem = () => moveBy(-1);
 
   return (
     <div
