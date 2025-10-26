@@ -19,6 +19,9 @@
   --font-mansalva: var(--font-mansalva);
 }
 
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent) var(--background);
 }
 
 body {
