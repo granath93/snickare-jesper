@@ -16,6 +16,9 @@
   --color-accent: var(--accent);
   --color-accent-secondary: var(--accent-secondary);
   --font-inter: var(--font-inter);
+  --font-mansalva: var(--font-mansalva);
+}
+
 }
 
 body {
@@ -84,4 +87,8 @@ textarea:-webkit-autofill:focus {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.handwritten {
+  font-family: var(--font-mansalva), Helvetica, sans-serif;
 }
