@@ -5,7 +5,7 @@ const Button: React.FC<{ label: string; click: () => void }> = ({
   click,
 }) => {
   return (
-    <button type="button" onClick={click}>
+    <button type="button" onClick={click} className="primary">
       {label}
     </button>
   );
