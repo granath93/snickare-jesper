@@ -1,10 +1,16 @@
 import type { Metadata } from "next";
-import { Inter, Bebas_Neue as BebasNeue } from "next/font/google";
+import { Inter, Bebas_Neue as BebasNeue, Mansalva } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
+});
+
+const handwritten = Mansalva({
+  variable: "--font-mansalva",
+  subsets: ["latin"],
+  weight: "400",
 });
 
 const bebas = BebasNeue({
@@ -79,7 +85,9 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${inter.variable} ${bebas.variable} antialiased`}>
+      <body
+        className={`${inter.variable} ${bebas.variable} ${handwritten.variable} antialiased`}
+      >
         {children}
       </body>
     </html>

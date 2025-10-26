@@ -14,7 +14,7 @@ const Hero = () => {
           <h1 className="leading-14 my-4 md:my-0 md:leading-tight">
             Bygger, renoverar och underhåller
           </h1>
-          <a href="#contact" className="button-lookalike mt-4">
+          <a href="#contact" className="button-lookalike primary mt-4">
             Kontakta
           </a>
         </div>

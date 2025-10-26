@@ -16,6 +16,12 @@
   --color-accent: var(--accent);
   --color-accent-secondary: var(--accent-secondary);
   --font-inter: var(--font-inter);
+  --font-mansalva: var(--font-mansalva);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent) var(--background);
 }
 
 body {
@@ -53,13 +59,13 @@ button {
   @apply cursor-pointer;
 }
 
-a.button-lookalike,
-button {
+a.button-lookalike.primary,
+button.primary {
   @apply rounded bg-accent text-black py-2 px-4 md:py-3 md:px-6 w-fit transition-colors duration-300 text-lg sm:text-xl md:text-3xl font-medium;
 }
 
-a.button-lookalike:hover,
-button:hover {
+a.button-lookalike:hover.primary,
+button:hover.primary {
   @apply rounded bg-background text-accent outline-1 outline-accent outline-solid;
 }
 
@@ -84,4 +90,8 @@ textarea:-webkit-autofill:focus {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.handwritten {
+  font-family: var(--font-mansalva), Helvetica, sans-serif;
 }
