@@ -12,7 +12,7 @@ const About = () => {
             alt="Jesper Pettersson"
             className="object-cover"
             fill
-            priority
+            loading="lazy"
             sizes="width: 178px, height: 238px"
           />
         </div>

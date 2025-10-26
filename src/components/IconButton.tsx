@@ -8,7 +8,7 @@ const IconButton: React.FC<{
   tooltip?: string;
   width?: number;
   className?: string;
-}> = ({ src, click, width, ariaLabel, className = '', tooltip }) => {
+}> = ({ src, click, width, ariaLabel, className = "", tooltip }) => {
   return (
     <button
       type="button"
@@ -22,7 +22,7 @@ const IconButton: React.FC<{
         alt=""
         width={width ?? 38}
         height={width ?? 38}
-        priority
+        loading="lazy"
       />
     </button>
   );

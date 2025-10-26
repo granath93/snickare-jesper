@@ -25,7 +25,7 @@ const Info: React.FC<{ variant: "mail" | "tel" }> = ({ variant }) => (
       alt={variants[variant].alt}
       width={38}
       height={38}
-      priority
+      loading="lazy"
     />
     {variants[variant].text}
   </a>
