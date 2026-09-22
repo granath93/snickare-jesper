@@ -10,7 +10,7 @@ const About = () => {
           <Image
             src="/jesper.png"
             alt="Jesper Pettersson"
-            className="object-cover"
+            className="object-cover h-auto w-auto"
             fill
             loading="lazy"
             sizes="width: 178px, height: 238px"
