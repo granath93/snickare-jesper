@@ -96,7 +96,7 @@ const localBusinessStructuredData = JSON.stringify({
         "@type": "Offer",
         itemOffered: {
           "@type": "Service",
-          name: "Nybygge",
+          name: "Golvläggare",
         },
       },
     ],
