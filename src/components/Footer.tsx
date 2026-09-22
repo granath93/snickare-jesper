@@ -1,7 +1,15 @@
+'use client';
+import { useEffect, FC, useState } from "react";
 import Info from "./Info";
 
-const Footer = () => {
-  const year = new Date().getFullYear();
+
+const Footer: FC = () => {
+  const [year, setYear] = useState<number | undefined>(undefined);
+
+  useEffect(() => {
+    setYear(typeof window !== "undefined" ? new Date(Date.now()).getFullYear() : undefined);
+
+  }, []);
   return (
     <footer className="flex flex-col items-center justify-center mb-3 md:gap-5 gap-7">
       <div className="flex flex-col md:flex-row gap-3 md:gap-6 items-start md:items-center justify-center">

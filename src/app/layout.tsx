@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Bebas_Neue as BebasNeue, Mansalva } from "next/font/google";
 import "./globals.css";
+import { url } from "../content";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -22,14 +23,13 @@ const bebas = BebasNeue({
 const title = "Snickare Jesper Pettersson | Alingsås";
 const description =
   "Snickare i och runtom Alingsås. Bygger, renoverar och underhåller.";
-const url = "https://snickare-jesper.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(url),
   title,
   description,
   robots: { index: true, follow: true },
-  keywords: ["snickare", "jesper", "pettersson", "alingsås", "snickeri"],
+  keywords: ["snickare", "jesper", "pettersson", "alingsås", "snickeri", "bygg", "renovering", "altan", "finsnickeri", "nybygge", "byggservice"],
   alternates: {
     canonical: url,
   },
@@ -42,12 +42,65 @@ export const metadata: Metadata = {
   },
 };
 
+const tel = process.env.NEXT_PUBLIC_TEL ?? "xxxxxxxxxx";
+
 // WebSite structured data (JSON-LD) for Google search results
-const webSiteStructuredData = JSON.stringify({
+const localBusinessStructuredData = JSON.stringify({
   "@context": "https://schema.org",
-  "@type": "WebSite",
+  "@type": "LocalBusiness",
   name: title,
   url,
+  "telephone": tel,
+  "openingHours": "Mo-Fr 08:00-17:00",
+  areaServed: ["Alingsås", "Herrljunga", "Vårgårda", "Mölndal", "Göteborg"],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Svedenborgsgatan 31",
+    "addressLocality": "Alingsås",
+    "postalCode": "441 43",
+    "addressCountry": "SE"
+  },
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Tjänster",
+    itemListElement: [
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Byggservice",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Renovering",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Altanbygge",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Finsnickeri",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Golvläggning",
+        },
+      },
+    ],
+  },
 });
 
 export default function RootLayout({
@@ -71,7 +124,6 @@ export default function RootLayout({
           sizes="180x180"
           href="/apple-touch-icon.png"
         />
-        <link rel="manifest" href="/site.webmanifest" />
         {/* Google search console tag: https://search.google.com/search-console/welcome?utm_source=about-page */}
         <meta
           name="google-site-verification"
@@ -81,7 +133,7 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: webSiteStructuredData,
+            __html: localBusinessStructuredData,
           }}
         />
       </head>
