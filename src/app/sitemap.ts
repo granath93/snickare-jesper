@@ -8,7 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
             lastModified: new Date(),
             changeFrequency: 'monthly',
             priority: 1,
-            images: ['https://snickare-jesper.se/hero-image.png'],
+            images: [`${url}/hero-image.png`],
         },
     ]
 }
