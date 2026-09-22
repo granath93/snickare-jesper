@@ -30,6 +30,7 @@ const Library = () => {
                 src={item.imageUrl}
                 width={366}
                 height={366}
+                loading="eager"
                 className="cursor-zoom-in"
               />
               <p className="italic handwritten">{item.title}</p>

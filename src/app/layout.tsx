@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Bebas_Neue as BebasNeue, Mansalva } from "next/font/google";
 import "./globals.css";
+import { url } from "../content";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -22,14 +23,13 @@ const bebas = BebasNeue({
 const title = "Snickare Jesper Pettersson | Alingsås";
 const description =
   "Snickare i och runtom Alingsås. Bygger, renoverar och underhåller.";
-const url = "https://snickare-jesper.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(url),
   title,
   description,
   robots: { index: true, follow: true },
-  keywords: ["snickare", "jesper", "pettersson", "alingsås", "snickeri"],
+  keywords: ["snickare", "jesper", "pettersson", "alingsås", "snickeri", "bygg", "renovering", "altan", "finsnickeri", "nybygge", "byggservice"],
   alternates: {
     canonical: url,
   },

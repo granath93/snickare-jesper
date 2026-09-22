@@ -21,6 +21,7 @@ const variants = {
 const Info: React.FC<{ variant: "mail" | "tel" }> = ({ variant }) => (
   <a href={variants[variant].href} className="inline-flex items-center gap-1.5">
     <Image
+      className="h-auto w-auto"
       src={variants[variant].imgSrc}
       alt={variants[variant].alt}
       width={38}
