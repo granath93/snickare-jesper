@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { Suspense, useEffect, useState } from "react";
 import Underline from "./Underline";
+import HomeIcon from "./HomeIcon";
 
 type MenuItem = { href: string; label: string };
 
@@ -13,12 +14,16 @@ const items: MenuItem[] = [
     href: "#home",
   },
   {
-    label: "Om mig",
+    label: "Om",
     href: "#about",
   },
   {
     label: "Kontakt",
     href: "#contact",
+  },
+  {
+    label: "Tjänster",
+    href: "#services",
   },
   {
     label: "Arbeten",
@@ -70,6 +75,8 @@ const Menu = () => {
 
 const MenuItem: React.FC<{ item: MenuItem }> = ({ item: { href, label } }) => {
   const [isActive, setIsActive] = useState(false);
+  const [hover, setHover] = useState(false);
+
   const searchParam = useSearchParams();
 
   useEffect(() => {
@@ -87,15 +94,28 @@ const MenuItem: React.FC<{ item: MenuItem }> = ({ item: { href, label } }) => {
 
   return (
     <Underline key={href} hidden={!isActive} variant="small">
-      <Link
-        href={href}
-        className={`text-base md:text-lg p-2 ${
-          isActive ? "text-accent" : "text-red-200"
-        }`}
-        aria-current={isActive ? "page" : "false"}
-      >
-        {label}
-      </Link>
+      {
+        label === "Hem" ? (
+          <Link
+          onMouseEnter={() => setHover(true)}
+          onMouseLeave={() => setHover(false)}
+            href={href}
+            className="flex items-center px-2 py-1"
+            aria-current={isActive ? "page" : "false"}
+          >
+            <HomeIcon hover={hover} />
+          </Link>
+        ) : (
+        <Link
+          href={href}
+          className="text-base md:text-lg p-2"
+          aria-current={isActive ? "page" : "false"}
+        >
+          {label}
+        </Link>
+        )
+      }
+      
     </Underline>
   );
 };

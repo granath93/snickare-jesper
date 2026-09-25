@@ -11,7 +11,7 @@ const Hero: FC = () => {
         <div className="flex flex-col self-center m-auto w-full px-8 sm:px-0 sm:w-2/3">
           <h1 className="flex flex-col my-4 md:my-0">
             <Underline>
-              <span className="block text-md md:text-2xl lg:text-3xl font-inter font-normal mb-2">Snickare Jesper Pettersson | Alingsås</span>
+              <span className="block text-md md:text-xl lg:text-2xl font-inter font-normal mb-0 md:mb-1">Snickare Jesper Pettersson | Alingsås</span>
             </Underline>
               <span className="mr-0 md:mr-4 mt-8 font-semibold text-6xl md:text-7xl lg:text-8xl xl:text-9xl leading-thin">Bygger, renoverar och underhåller</span>
           </h1>

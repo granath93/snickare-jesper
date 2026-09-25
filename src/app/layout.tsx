@@ -52,7 +52,7 @@ const localBusinessStructuredData = JSON.stringify({
   url,
   "telephone": tel,
   "openingHours": "Mo-Fr 08:00-17:00",
-  areaServed: ["Alingsås", "Herrljunga", "Vårgårda", "Mölndal", "Göteborg"],
+  areaServed: ["Alingsås", "Herrljunga", "Vårgårda", "Göteborg", "Vara", "Falköping", "Borås"],
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Svedenborgsgatan 31",
@@ -97,6 +97,20 @@ const localBusinessStructuredData = JSON.stringify({
         itemOffered: {
           "@type": "Service",
           name: "Golvläggning",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Fönster, dörr och fasadbyte",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Kök",
         },
       },
     ],
