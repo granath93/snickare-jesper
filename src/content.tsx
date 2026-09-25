@@ -21,8 +21,16 @@ const about = () => {
 
 
 const contact = "Antingen kan du ringa direkt, skicka ett SMS eller skicka ett mail så kontaktar jag dig."
-const library =
-  "Under året har jag fått tillfället att hjälpa både privatpersoner och företag med olika snickeriprojekt. Här nedan finns några exempel.";
+const library = () => {
+  return <>
+    <p>
+      Under åren har jag fått tillfället att hjälpa både privatpersoner och företag med olika projekt. Här nedan finns några exempel. 
+    </p>
+    <p>
+      Finns mer information och bilder om du klickar på bilderna.
+    </p>
+  </>
+};
 
 
 export const content = { about, contact, library };

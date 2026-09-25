@@ -10,7 +10,6 @@ export type LibraryResource = {
 export const libraryResources: LibraryResource[] = [
   {
     title: "Platsbyggd hylla - enbart snickeri",
-    description: "En platsbyggd bokhylla i MDF - innan och efter målning.",
     imageUrl:
       "https://ucwo2izryqq2mgwr.public.blob.vercel-storage.com/hylla-efter-MkxuWKCzR75FSfnNpbZaRJ2Z8sfqxT.png",
     alt: "målad bokhylla",
@@ -18,6 +17,7 @@ export const libraryResources: LibraryResource[] = [
       {
         imageUrl:
           "https://ucwo2izryqq2mgwr.public.blob.vercel-storage.com/hylla-Jkel6Vakdqh0XIxHqyamHd9c3ZAtQF.png",
+        description: "En platsbyggd bokhylla i MDF - innan och efter målning.",
         alt: "omålad bokhylla",
       },
       "original",
@@ -25,7 +25,7 @@ export const libraryResources: LibraryResource[] = [
   },
   {
     title: "Utesoffa",
-    description: "En rustik soffa som tål mycket.",
+    description: "En rustik platsbyggt soffa, byggd efter kundens önskan på storlek.",
     imageUrl:
       "https://ucwo2izryqq2mgwr.public.blob.vercel-storage.com/soffa-mJ0JKZTWCMz6KNrpyCdwveM2TueshY.png",
     alt: "soffa",
@@ -55,6 +55,35 @@ export const libraryResources: LibraryResource[] = [
     alt: "soffa",
   },
   {
+    title: "Ny vägg med ny inbyggd skjutdörr",
+    imageUrl:
+      "https://ucwo2izryqq2mgwr.public.blob.vercel-storage.com/skjutdorrar-JjalG6dMZcb84a3bx5yLCHWXLuWKoM.png",
+    alt: "stängd skjutdörr",
+    description:
+      "En ny vägg med en ny inbyggd skjutdörr. Målningen har kunden själv stått för.",
+    popup: [
+      "original",
+      {
+        imageUrl:
+          "https://ucwo2izryqq2mgwr.public.blob.vercel-storage.com/stangd-skjutdorr-cvnnwYIXMgmhaPl5DtlzYmSX8Pbu4x.png",
+        alt: "öppen skjutdörr",
+      },
+    ],
+  },
+  {
+    title: "Platsbyggd garderob med skjutdörrar",
+    imageUrl:
+    "https://ucwo2izryqq2mgwr.public.blob.vercel-storage.com/grarderob-stangd-ZRlXBJldNFTPMOiaY1vaCXOYlFhiJr.png",
+    alt: "garderob - stängd",
+  },
+  {
+    title: "Platsbyggt garderob - inredning",
+    description: "Inredningen är monterad efter kundens önskemål.",
+    imageUrl:
+    "https://ucwo2izryqq2mgwr.public.blob.vercel-storage.com/garderob-hoger-oppen-IoDCS4L1oMkouqvWELjFy1Fo1hvuls.png",
+    alt: "garderob - öppen med inredning",
+  },
+  {
     title: "Renoverat staket",
     description: "Ett staket som behövde renoveras efter en mindre incident.",
     imageUrl:
@@ -62,17 +91,48 @@ export const libraryResources: LibraryResource[] = [
     alt: "staket",
   },
   {
-    title: "Platsbyggd garderob med skjutdörrar",
+    title: "Nytt staket, räcke och trappa",
     imageUrl:
-      "https://ucwo2izryqq2mgwr.public.blob.vercel-storage.com/grarderob-stangd-ZRlXBJldNFTPMOiaY1vaCXOYlFhiJr.png",
-    alt: "garderob - stängd",
+      "https://ucwo2izryqq2mgwr.public.blob.vercel-storage.com/altan-m-sjoutsikt-CXsHCyswJNInh1z9o6Z2EAeNBDtPTk.png",
+    alt: "staket, räcke och trappa",
+    description:
+      "Staket, trappa och trappräcke byggdes efter kundens önskemål.",
+    popup: [
+      "original",
+      {
+        imageUrl:
+          "https://ucwo2izryqq2mgwr.public.blob.vercel-storage.com/altan-LolJph13eXgTIECbzFi517oyXTZTuC.png",
+        alt: "omålad bokhylla",
+      },
+    ],
   },
   {
-    title: "Platsbyggt garderob - inredning",
-    description: "Inredningen är monterad efter kundens önskemål.",
+    title: "Fasadbyte",
     imageUrl:
-      "https://ucwo2izryqq2mgwr.public.blob.vercel-storage.com/garderob-hoger-oppen-IoDCS4L1oMkouqvWELjFy1Fo1hvuls.png",
-    alt: "garderob - öppen med inredning",
+      "https://ucwo2izryqq2mgwr.public.blob.vercel-storage.com/fasad-c9pFHh1MiQbfUjy3EKRTdpB2nlPbrw.png",
+    alt: "fasad",
+    description: "Fasaden är utbytt på sidan som syns.",
+  },
+  {
+    title: "Utbytta köksskåp och kakel",
+    imageUrl:
+      "https://ucwo2izryqq2mgwr.public.blob.vercel-storage.com/kok-ry9JxOTT8xh1Xs7IpA1zw7FVW16ky5.png",
+    alt: "kök",
+    description:
+      "Köket byttes ut efter kundens önskemål som innebar mellanväggen/köksön, skåpen och kaklet byttes ut.",
+    popup: [
+      "original",
+      {
+        imageUrl:
+          "https://ucwo2izryqq2mgwr.public.blob.vercel-storage.com/kokso-305unWbSgXAaft3zGIaTrdQbluNQdU.png",
+        alt: "Mellanvägg med kylskåp och köksskåp",
+      },
+      {
+        imageUrl:
+          "https://ucwo2izryqq2mgwr.public.blob.vercel-storage.com/koksvagg-11zsubP3nWz9tcfMbjjIGPD3YI0tS7.png",
+        alt: "Baksidan av mellanväggen i köket",
+      },
+    ],
   },
   {
     title: "Altandörr och fasadbyte",
