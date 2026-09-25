@@ -4,6 +4,7 @@ import Contact from "@/components/Contact";
 import Library from "@/components/Library";
 import Hero from "@/components/Hero";
 import Menu from "@/components/Menu";
+import Services from "@/components/Services";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <main className="flex flex-col justify-center items-center">
           <About />
           <Contact />
+          <Services />
           <Library />
         </main>
         <Footer />

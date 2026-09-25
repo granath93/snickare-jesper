@@ -4,7 +4,7 @@ import { LibraryResource } from "@/libraryResources";
 import IconButton from "./IconButton";
 
 const arrowsStyle =
-  "md:static absolute z-10 bg-black/80 rounded-full md:bg-transparent";
+  "top-[250px] md:top-[300px] md:relative md:left-0 md:right-0 md:top-[250px] md:flex md:self-start  absolute z-10 bg-black/80 rounded-full md:bg-transparent";
 
 export const ImagePopup: React.FC<{
   list: LibraryResource[];
@@ -60,7 +60,7 @@ export const ImagePopup: React.FC<{
               width={15}
               tooltip="Föregående"
               click={previousItem}
-              className={`rotate-180 -left-4 top-1/2 -translate-y-1/2 md:-left-[80px] ${arrowsStyle}`}
+              className={`rotate-180 -left-4 ${arrowsStyle}`}
             />
             <Images item={item!} />
             <IconButton
@@ -69,7 +69,7 @@ export const ImagePopup: React.FC<{
               tooltip="Nästa"
               width={15}
               click={nextItem}
-              className={`-right-4 top-1/2 -translate-y-1/2 md:-right-[80px] ${arrowsStyle}`}
+              className={`-right-4 ${arrowsStyle}`}
             />
           </div>
         )}
@@ -85,24 +85,25 @@ const Images: React.FC<{ item: LibraryResource }> = ({ item }) => {
     <div className="flex flex-col items-center gap-4">
       <p className="handwritten text-3xl">{item.title}</p>
 
-      {items.map((popupItem, index) => {
+      {items.map((popupItem) => {
         const img = popupItem === "original" ? item : popupItem;
-
+        
         return (
-          <span key={index} className="flex flex-col items-center">
+          <span key={img.imageUrl} className="flex flex-col items-center">
+            {img.description && (
+              <p className="flex-wrap w-full md:w-147.5 pb-3">
+                {img.description}
+              </p>
+            )}
             <div className="h-[350px] max-w-full w-[350px] md:h-[590px] md:w-[590px] relative">
               <Image
                 className="h-full"
                 alt={img.alt}
                 src={img.imageUrl}
+                sizes="(max-width: 767px) 360px, (max-width: 2000px) 590px"
                 fill={true}
               />
             </div>
-            {img.description && (
-              <p className="flex-wrap w-full md:w-[590px] pt-3">
-                {img.description}
-              </p>
-            )}
           </span>
         );
       })}

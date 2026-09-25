@@ -15,7 +15,7 @@ const Library = () => {
   return (
     <>
       <Section id="library" title="Arbeten">
-        <p className="w-full md:w-3xl  max-w-full">{content.library}</p>
+        {content.library()}
         <div className="inline-flex flex-wrap justify-center md:justify-start gap-6">
           {libraryResources.map((item) => (
             <button
@@ -30,6 +30,7 @@ const Library = () => {
                 src={item.imageUrl}
                 width={366}
                 height={366}
+                sizes="(max-width: 2000px) 360px"
                 loading="eager"
                 className="cursor-zoom-in"
               />
