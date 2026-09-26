@@ -1,6 +1,5 @@
 "use client";
 
-import { useSectionObserver } from "@/hooks/useSectionObserver";
 import Underline from "./Underline";
 
 const Section: React.FC<{
@@ -8,11 +7,10 @@ const Section: React.FC<{
   id: string;
   children: React.ReactNode;
 }> = ({ id, title, children }) => {
-  useSectionObserver(id);
-
   return (
     <div
-      id={id}
+      id={id} 
+      style={{ scrollMarginTop: '150px' }}
       className="flex flex-col gap-6 mb-48 scroll-mt-14 w-full md:w-3xl max-w-full"
     >
       <Underline>
