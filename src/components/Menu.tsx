@@ -45,17 +45,7 @@ const Menu = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  useEffect(() => {
-    const hash = window.location.hash;
 
-    if (hash) {
-      const el = document.querySelector(hash);
-
-      if (el) {
-        el.scrollIntoView({ behavior: "smooth" });
-      }
-    }
-  }, []);
 
   return (
     <nav
@@ -81,24 +71,15 @@ const MenuItem: React.FC<{ item: MenuItem }> = ({ item: { href, label } }) => {
 
   useEffect(() => {
     setIsActive(window.location.hash === href);
-  }, [searchParam, href]);
-
-  useEffect(() => {
-    const onHashChange = () => {
-      setIsActive(window.location.hash === href);
-    };
-    window.addEventListener("hashchange", onHashChange);
-
-    return () => window.removeEventListener("hashchange", onHashChange);
-  }, [href]);
+  }, [searchParam]);
 
   return (
-    <Underline key={href} hidden={!isActive} variant="small">
+    <Underline   key={href} hidden={!isActive} variant="small">
       {
         label === "Hem" ? (
           <Link
-          onMouseEnter={() => setHover(true)}
-          onMouseLeave={() => setHover(false)}
+            onMouseEnter={() => setHover(true)}
+            onMouseLeave={() => setHover(false)}
             href={href}
             className="flex items-center px-2 py-1"
             aria-current={isActive ? "page" : "false"}

@@ -84,13 +84,6 @@ export const libraryResources: LibraryResource[] = [
     alt: "garderob - öppen med inredning",
   },
   {
-    title: "Renoverat staket",
-    description: "Ett staket som behövde renoveras efter en mindre incident.",
-    imageUrl:
-      "https://ucwo2izryqq2mgwr.public.blob.vercel-storage.com/staget-O7C2IPaB2xK0jEU1zXzOhYSlqm3ohY.png",
-    alt: "staket",
-  },
-  {
     title: "Nytt staket, räcke och trappa",
     imageUrl:
       "https://ucwo2izryqq2mgwr.public.blob.vercel-storage.com/altan-m-sjoutsikt-CXsHCyswJNInh1z9o6Z2EAeNBDtPTk.png",
@@ -133,6 +126,13 @@ export const libraryResources: LibraryResource[] = [
         alt: "Baksidan av mellanväggen i köket",
       },
     ],
+  },
+  {
+    title: "Renoverat staket",
+    description: "Ett staket som behövde renoveras efter en mindre incident.",
+    imageUrl:
+      "https://ucwo2izryqq2mgwr.public.blob.vercel-storage.com/staget-O7C2IPaB2xK0jEU1zXzOhYSlqm3ohY.png",
+    alt: "staket",
   },
   {
     title: "Altandörr och fasadbyte",

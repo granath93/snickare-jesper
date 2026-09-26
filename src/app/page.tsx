@@ -1,3 +1,4 @@
+"use client";
 import Footer from "@/components/Footer";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
@@ -5,8 +6,10 @@ import Library from "@/components/Library";
 import Hero from "@/components/Hero";
 import Menu from "@/components/Menu";
 import Services from "@/components/Services";
+import { useTitleObserver } from "@/hooks/useTitleObserver";
 
 export default function Home() {
+  useTitleObserver()
   return (
     <>
       <Menu />
