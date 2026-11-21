@@ -68,7 +68,7 @@ const services = () => {
     <div>
       <h3>ROT-avdrag</h3>
       <p>
-        Som privatperson kan du i många fall nyttja ROT-avdrag när du anlitar mig för bygg- och renoveringsarbeten. Det innebär att du kan få skattereduktion på en del av arbetskostnaden, förutsatt att arbetet och dina förutsättningar uppfyller Skatteverkets villkor.
+        Som privatperson kan du i många fall nyttja ROT-avdrag när du anlitar mig för bygg- och renoveringsarbeten. Det innebär att du kan få skattereduktion på en del av arbetskostnaden, förutsatt att arbetet och dina förutsättningar uppfyller <a href="https://www.skatteverket.se/privat/fastigheterochbostad/rotarbeteochrutarbete/safungerarrotavdraget.4.5947400c11f47f7f9dd80004014.html" className="underline" target="_blank" rel="noopener noreferrer">Skatteverkets villkor</a>.
       </p>
     </div>
   </>)
