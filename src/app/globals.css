@@ -55,6 +55,9 @@ h5 {
 h2 {
   @apply font-semibold text-4xl md:text-6xl;
 }
+h3 {
+  @apply font-semibold text-2xl md:text-4xl mt-4 mb-2;
+}
 
 a {
   @apply transition-colors duration-500 text-foreground;
@@ -77,6 +80,14 @@ button.primary {
 a.button-lookalike:hover.primary,
 button:hover.primary {
   @apply rounded bg-background text-accent outline-1 outline-accent outline-solid;
+}
+
+a.button.secondary {
+  @apply text-accent border-1 border-transparent rounded border-solid  py-2 px-4 md:py-3 md:px-6 w-fit transition-colors duration-300 md:text-xl lg:text-2xl;
+}
+
+a.button.secondary:hover {
+  @apply rounded border-1 border-accent border-solid transition-all duration-300;
 }
 
 input {

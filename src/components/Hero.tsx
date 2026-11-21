@@ -13,11 +13,16 @@ const Hero: FC = () => {
             <Underline>
               <span className="block text-md md:text-xl lg:text-2xl font-inter font-normal mb-0 md:mb-1">Snickare Jesper Pettersson | Alingsås</span>
             </Underline>
-              <span className="mr-0 md:mr-4 mt-8 font-semibold text-6xl md:text-7xl lg:text-8xl xl:text-9xl leading-thin">Bygger, renoverar och underhåller</span>
+            <span className="mr-0 md:mr-4 mt-8 font-semibold text-6xl md:text-7xl lg:text-8xl xl:text-9xl leading-thin">Snickeri, renovering och byggtjänster</span>
           </h1>
-          <a href="#contact" className="button-lookalike primary mt-4">
-            Kontakta
-          </a>
+          <div className="flex flex-row gap-4 md:gap-8 mt-0 md:mt-4 items-center">
+            <a href="#contact" className="button-lookalike primary mt-4">
+              Kontakta
+            </a> <a href="#services" className="button secondary mt-4">
+              Mina tjänster
+            </a>
+
+          </div>
         </div>
       </div>
     </div>

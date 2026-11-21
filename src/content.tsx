@@ -3,18 +3,21 @@ const about = () => {
     <>
       <p>
         Letar ni efter en snickare som verkligen bryr sig om resultatet? Då har
-        ni hittat rätt. Jag är en skicklig hantverkare med öga för detaljer och en passion för mitt
-        yrke. Oavsett om ni planerar en omfattande renovering, ett nytt
-        altanbygge eller behöver hjälp med finsnickeri, så levererar jag alltid ett resultat av bra kvalitet.
+        ni hittat rätt.
       </p>
-
+      <p>Mitt namn är Jesper Pettersson och jag driver egen firma i Alingsås med omnejd. Firman grundades hösten 2024, men bakom verksamheten finns en snickare med erfarenhet sedan 2008.
+      </p>
       <p>
-        Med många nöjda kunder och ett rykte om att vara både trevlig
-        och noggrann, är jag ett bra val för dig som vill ha jobbet
-        gjort, på rätt sätt, från start till mål.
+        För mig är bra kvalitet och ett väl utfört arbete en självklarhet, oavsett om ni planerar en omfattande renovering, ett nytt altanbygge eller behöver hjälp med finsnickeri.
       </p>
-
-      <p>Utgår från Alingsås och är verksam allt mellan Vara, Falköping, Borås och Göteborg.</p>
+      <p>
+        Tjänsterna riktar sig till privatpersoner, företag och föreningar. Även byggföretag som behöver förstärkning eller söker en underentreprenör är varmt välkomna att höra av sig.
+      </p>
+      <p>
+        Jag är registrerad med F-skatt och är sökbar på <a className="underline" href="https://www.allabolag.se/foretag/jesper-pettersson/alings%C3%A5s/byggm%C3%A4stare/V7LWB3J97I5YDDT" target="_blank" rel="noopener noreferrer">Allabolag</a>.
+        Utgångspunkten är Alingsås och arbetsområdet sträcker sig allt mellan Vara, Falköping, Borås och Göteborg.
+      </p>
+      <p>Välkommen att höra av er för att diskutera erat nästa projekt!</p>
     </>
   );
 };
@@ -24,7 +27,7 @@ const contact = "Antingen kan ni ringa direkt, skicka ett SMS eller skicka ett m
 const library = () => {
   return <>
     <p>
-      Under åren har jag fått tillfället att hjälpa både privatpersoner och företag med olika projekt. Här nedan finns några exempel. 
+      Under åren har jag fått tillfället att hjälpa både privatpersoner och företag med olika projekt. Här nedan finns några exempel.
     </p>
     <p>
       Finns mer information och bilder om ni klickar på bilderna.
@@ -34,28 +37,40 @@ const library = () => {
 
 const services = () => {
   return (<>
-  <p>Nedan ser ni några av mina tjänster jag erbjuder, oavsett om ni är privatkund, företag eller en bostadsrättsförening.
-    Tveka inte att höra av er om ni önkar något utöver dessa tjänster.</p>
-  <ul className="list-inside list-disc flex flex-col gap-2">
-    <li>
-      <b>Nybygge</b> - Bygger allt från staket, trappor, väggar och altaner.
-    </li>
-    <li>
-      <b>Kök</b> - Kompletta köksrenoveringar eller anpassningar efter behov.
-    </li>
-    <li>
-      <b>Golvläggning</b> - Lägger parkett, laminat och andra golvtyper.
-    </li>
-    <li>
-      <b>Byte av fönster och dörrar</b> - Energieffektiva och säkra installationer.
-    </li>
-    <li>
-      <b>Renoveringar</b> - Bland annat fasadbyten.
-    </li>
-    <li>
-      <b>Snickeri</b> - Platsbyggda möbler, hyllor och finsnickeri.
-    </li>
-  </ul>
+    <p>
+      Här hittar ni ett urval av de tjänster som erbjuds, oavsett om ni är privatperson, företag eller bostadsrättsförening. Utöver dessa finns även möjlighet att diskutera andra typer av snickeri- och byggarbeten.
+    </p>
+    <p>
+      För byggföretag erbjuds även uppdrag som inhyrd snickare eller underentreprenör, med möjlighet till både kortare inhopp och längre samarbeten vid behov av extra förstärkning.</p>
+    <ul className="list-inside list-disc flex flex-col gap-2 my-4">
+      <li>
+        <b>Nybygge</b> -  Bygger allt från altaner, staket och trappor till väggar och andra byggnationer.
+      </li>
+      <li>
+        <b>Kök</b> - Kompletta köksrenoveringar, köksmontering och anpassningar efter dina önskemål.
+      </li>
+      <li>
+        <b>Golvläggning</b> - Lägger parkett, laminat och andra golvtyper.
+      </li>
+      <li>
+        <b>Byte av fönster och dörrar</b> - Byte och montering av fönster och dörrar med fokus på funktion, passform och finish.
+      </li>
+      <li>
+        <b>Renoveringar</b> - Renovering och ombyggnation, bland annat fasadbyten och invändiga arbeten.
+      </li>
+      <li>
+        <b>Snickeri</b> - Platsbyggda möbler, garderober, hyllor, speciallösningar och finsnickeri.
+      </li>
+      <li><b>Underentreprenör & resursförstärkning</b> -  Inhyrd snickare till byggföretag och andra aktörer inom byggbranschen. Tillgänglig för både vid kortare inhopp och längre uppdrag.</li>
+    </ul>
+    <p>Exempel på tidigare projekt och arbeten finns i mitt <a className="underline" href="#library">galleri</a>.</p>
+
+    <div>
+      <h3>ROT-avdrag</h3>
+      <p>
+        Som privatperson kan du i många fall nyttja ROT-avdrag när du anlitar mig för bygg- och renoveringsarbeten. Det innebär att du kan få skattereduktion på en del av arbetskostnaden, förutsatt att arbetet och dina förutsättningar uppfyller Skatteverkets villkor.
+      </p>
+    </div>
   </>)
 }
 

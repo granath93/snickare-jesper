@@ -17,8 +17,8 @@ export default function Home() {
       <div className="mt-8 md:mt-18 md:mx-12 mx-4">
         <main className="flex flex-col justify-center items-center">
           <About />
-          <Contact />
           <Services />
+          <Contact />
           <Library />
         </main>
         <Footer />
