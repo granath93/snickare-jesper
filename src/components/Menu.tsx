@@ -18,12 +18,12 @@ const items: MenuItem[] = [
     href: "#about",
   },
   {
-    label: "Kontakt",
-    href: "#contact",
-  },
-  {
     label: "Tjänster",
     href: "#services",
+  },
+  {
+    label: "Kontakt",
+    href: "#contact",
   },
   {
     label: "Arbeten",

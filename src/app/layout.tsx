@@ -22,14 +22,14 @@ const bebas = BebasNeue({
 
 const title = "Snickare Jesper Pettersson | Alingsås";
 const description =
-  "Snickare i och runtom Alingsås. Bygger, renoverar och underhåller.";
+  "Snickare i Alingsås med omnejd. Jag utför renoveringar, köksarbeten, altanbyggen och finsnickeri. För privatpersoner, företag, föreningar eller byggfirmor som underentreprenör. Kontakta mig!";
 
 export const metadata: Metadata = {
   metadataBase: new URL(url),
   title,
   description,
   robots: { index: true, follow: true },
-  keywords: ["snickare", "jesper", "pettersson", "alingsås", "snickeri", "bygg", "renovering", "altan", "finsnickeri", "nybygge", "byggservice"],
+  keywords: ["snickare", "jesper", "pettersson", "alingsås", "snickeri", "byggtjänster", "renovering", "altan", "finsnickeri", "nybygge", "byggservice", "enskild firma", "rot-avdrag", "byggfirma", "byggföretag", "underentreprenör"],
   alternates: {
     canonical: url,
   },
@@ -52,7 +52,7 @@ const localBusinessStructuredData = JSON.stringify({
   url,
   "telephone": tel,
   "openingHours": "Mo-Fr 08:00-17:00",
-  areaServed: ["Alingsås", "Herrljunga", "Vårgårda", "Göteborg", "Vara", "Falköping", "Borås"],
+  areaServed: ["Alingsås", "Herrljunga", "Vårgårda", "Partille", "Göteborg", "Vara", "Falköping", "Borås"],
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Svedenborgsgatan 31",
